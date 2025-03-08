@@ -37,8 +37,7 @@ def dct_blocks(seg):
     dct_seg = [cv2.dct(block/255.0) for block in seg_float32]
     return dct_seg
 
-seg = segdiv(image)
-dct_blocks(seg)
+
 
 
 
