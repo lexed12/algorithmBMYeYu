@@ -5,8 +5,6 @@ import numpy as np
 print("Hello, World!")
 
 
-
-
 image = cv2.cvtColor(cv2.imread('logo.jpg'), cv2.COLOR_BGR2GRAY)
 rows, height = image.shape
 channels = 1
