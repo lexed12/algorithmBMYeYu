@@ -55,7 +55,7 @@ def image_to_bits(image_path):
     # Открываем изображение
     img = Image.open(image_path)
     # Преобразуем изображение в массив numpy (без параметра copy=False)
-    img_array = np.array(img)  # Убрали copy=False
+    img_array = np.array(img)
     # Преобразуем массив в битовую последовательность
     bits = ''.join(format(pixel, '08b') for row in img_array for pixel in row.flatten())
     return bits, img.size, img.mode
